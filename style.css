@@ -1,7 +1,5 @@
-/* Classy, centered, modern portfolio CSS — refined typography, glass, layout, responsive, dark theme */
-
 :root{
-  /* Dark-first palette to match the screenshot */
+
   --bg:#0b0d0f;
   --bg-accent:#071018;
   --panel:#0f1720;
@@ -23,7 +21,7 @@
   --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
 }
 
-/* reset + base */
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -41,7 +39,7 @@ body{
   min-height:100vh;
 }
 
-/* centered container */
+
 .wrapper{
   width:100%;
   max-width:var(--max-width);
@@ -57,7 +55,7 @@ body{
   position:relative;
 }
 
-/* theme toggle (top-right) */
+
 #theme-toggle{
   position:absolute;
   right:18px;
@@ -75,7 +73,7 @@ body{
 }
 #theme-toggle:hover{ transform:scale(1.06); background:rgba(255,255,255,0.02) }
 
-/* header */
+
 .header{
   display:flex;
   flex-direction:column;
@@ -114,7 +112,7 @@ body{
   font-size:0.9rem;
 }
 
-/* section headings */
+
 .section-title{
   margin:18px 0 8px;
   font-size:1.05rem;
@@ -123,7 +121,7 @@ body{
   text-align:center;
 }
 
-/* main grid */
+
 .main{
   width:100%;
   display:grid;
@@ -132,7 +130,7 @@ body{
   align-items:start;
 }
 
-/* achievements: three cards inline */
+
 .achievements{
   width:100%;
   display:flex;
@@ -173,7 +171,7 @@ body{
   font-size:0.78rem;
 }
 
-/* projects grid */
+
 .projects{
   width:100%;
   display:flex;
@@ -208,7 +206,6 @@ body{
   font-weight:700;
 }
 
-/* bio box */
 .bio{
   width:100%;
   margin-top:10px;
@@ -220,12 +217,12 @@ body{
   background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));
 }
 
-/* small util */
+
 .center{ display:flex; align-items:center; justify-content:center }
 
-/* responsive */
+
 @media (min-width:980px){
-  .main{ grid-template-columns: 1fr; } /* single column but wide cards wrap inside, keeps screenshot layout */
+  .main{ grid-template-columns: 1fr; } 
   .ach-card{ width:280px }
   .project{ width:260px }
 }
@@ -235,7 +232,7 @@ body{
   .ach-card, .project{ width:100% }
 }
 
-/* light theme (toggle) */
+
 body.light{
   --bg: linear-gradient(180deg,#f5f7fa 0%, #eef1f6 100%);
   --bg-accent:#eef1f6;
