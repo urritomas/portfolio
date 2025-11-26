@@ -1,34 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Urri Jehan Karlo T. Tomas</h1>
-         <img src="urri profile.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">BSCS-2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Codechum representative (finalist)</li>
-            <li>CSS Officer</li>
-            <li>Java Certificate haver</li>
-         </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Urri — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <header class="header">
+      <img id="profile-img" src="urri profile.jpg" alt="Profile picture">
+      <h1 id="name">Urri Jehan Karlo T. Tomas</h1>
+      <div class="pill">BSCS - 2nd Year</div>
+    </header>
+
+    <main class="main">
+      <section class="achievements card">
+        <h3 class="section-title">Achievements & Certifications</h3>
+        <div class="achievements">
+          <div class="ach-card">
+            <div class="ach-inner">
+              <div class="ach-title">Codechum Representative</div>
+              <div class="ach-badge">Finalist</div>
+            </div>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-inner">
+              <div class="ach-title">CSS Officer</div>
+              <div class="ach-badge">Organization</div>
+            </div>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-inner">
+              <div class="ach-title">Java Certificate</div>
+              <div class="ach-badge">Proficiency</div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>KusinApp</li>
-            <li>Salary Checker</li>
-            <li>Payroll Management System</li>
-         </ul>
+
+      <section class="projects card">
+        <h3 class="section-title">Previous Projects</h3>
+        <div class="projects">
+          <article class="project">
+            <div class="title">KusinApp</div>
+            <div class="desc">A culinary application for recipe management and simple meal planning.</div>
+            <div class="tags">
+              <span class="tag">OOP</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="title">Salary Checker</div>
+            <div class="desc">Tool for salary verification and basic payroll calculations.</div>
+            <div class="tags">
+              <span class="tag">App</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="title">Payroll Management System</div>
+            <div class="desc">Comprehensive payroll processing and staff record management.</div>
+            <div class="tags">
+              <span class="tag">System</span>
+              <span class="tag">Database</span>
+            </div>
+          </article>
+        </div>
       </section>
-      <script src="script.js"></script>
-   </body>
+
+      <div class="bio card">
+        Passionate Computer Science student dedicated to creating innovative solutions and continuously learning new technologies.
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
