@@ -22,3 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updateIcon();
   });
 });
+
+// touch fallback: toggle .hover class on touch devices so hover shadow appears
+if ('ontouchstart' in window) {
+  document.querySelectorAll('.current .project').forEach(el => {
+    el.addEventListener('touchstart', () => el.classList.add('hover'), { passive: true });
+    el.addEventListener('touchend', () => el.classList.remove('hover'));
+    el.addEventListener('touchcancel', () => el.classList.remove('hover'));
+  });
+}
