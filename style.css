@@ -385,3 +385,47 @@ body.light .cssbuttons-io-button .icon svg {
   text-decoration: none;
 }
 
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(94, 162, 255, 0.08);
+  border: 1px solid rgba(94, 162, 255, 0.2);
+  color: var(--accent);
+  transition: transform var(--transition), background var(--transition), border-color var(--transition), color 1s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: rgba(94, 162, 255, 0.15);
+  border-color: rgba(94, 162, 255, 0.4);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.about {
+  margin-top: 12px;
+}
+
+.about-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: center;
+  transition: color 1s ease;
+}
+
