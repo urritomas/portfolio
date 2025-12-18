@@ -244,6 +244,77 @@ body::before{
   transition: background 1s ease, color 1s ease, border-color 1s ease;
 }
 
+.certificate-button-container{
+  background: rgba(255,255,255,0.03);
+  color:var(--muted);
+  padding:6px 10px;
+  border-radius:30px;
+  font-weight:700;
+  text-align: center;
+  
+  border:1px solid rgba(255,255,255,0.02);
+  font-size:0.78rem;
+  transition: background 1s ease, color 1s ease, border-color 1s ease;
+}
+
+.cssbuttons-io-button {
+  background: #726e752c;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #000000;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  width: 250px;
+  padding-right: 3.3em;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #6505ff4d;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
 
 .center{ display:flex; align-items:center; justify-content:center }
 
@@ -282,6 +353,21 @@ body.light .tagCSS {
   border:1px solid rgba(37,99,235,0.06);
 }
 
+body.light .cssbuttons-io-button {
+  background: rgba(250, 250, 250, 0.15);
+  color: var(--text);
+  box-shadow: inset 0 0 1.6em -0.6em rgba(0, 0, 0, 0.3);
+}
+
+body.light .cssbuttons-io-button .icon {
+  background: var(--accent);
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+body.light .cssbuttons-io-button .icon svg {
+  color: #ffffff;
+}
+
 
 .project-link {
   display: block;
@@ -298,3 +384,4 @@ body.light .tagCSS {
   outline: none;
   text-decoration: none;
 }
+
